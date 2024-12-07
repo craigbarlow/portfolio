@@ -5,18 +5,54 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Craig Barlow | Web Developer based in Cardiff</title>
+
+		<script>
+            let vheight = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', vheight + 'px');
+        </script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body class="bg-bg-light text-white">
 		<slot />
 	</body>
 </html>
 
-<style>
+<style lang="scss">
 	html,
 	body {
 		margin: 0;
 		width: 100%;
 		height: 100%;
 	}
+
+	html {
+		font-size: 0.76vw;
+
+		@screen lg {
+			font-size: 0.521vw;
+		}
+	}
+
+	body {
+		padding: 10px;
+
+		@screen lg {
+			padding: 20px;
+		}
+	}
+
+	
 </style>
+
+<script>
+	/**
+     * Set CSS variables for viewport height and header height
+     */
+	 window.addEventListener('resize', function() {
+        document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 + 'px');
+    }, true);
+</script>

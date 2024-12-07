@@ -1,0 +1,88 @@
+<section id="hero" class="flex flex-col justify-center lg:justify-end">
+
+	<div class="max-w-screen-xl px-24 lg:px-6 w-full mx-auto">
+		<h1 class="text-8xl">Hello!</h1>
+		<div class="lg:flex justify-between items-end">
+			<h2>My name<br />is <span class="text-primary">Craig.</span></h2>
+			<p class="text-2xl mt-28">I'm a <span class="text-primary font-semibold">Cardiff</span> based <span class="text-primary font-semibold">web developer</span> with over 10 years of expertise, currently <span class="text-primary font-semibold">Head of Developemnt</span> at <a class="text-webbox font-semibold" href="https://www.webbox.digital" target="_blank">WebBox</a>, crafting innovative solutions. If you would like to get in touch, please use the link in the top right.</p>	
+		</div>
+	</div>
+	
+</section>
+
+<style lang="scss">
+	#hero {
+		min-height: 100vh;
+        min-height: calc((var(--vh, 1vh) * 100) - 20px);
+
+
+		@screen lg {
+			padding-bottom: 14rem;
+			min-height: calc((var(--vh, 1vh) * 100) - 40px);
+		}
+
+		h1 {
+			font-size: 50rem;
+			font-weight: 900;
+			line-height: 1;
+			opacity: 0.05;
+			margin-bottom: -16rem;
+			margin-left: -2.25rem;
+
+			@screen sm {
+				margin-bottom: -11rem;
+				font-size: 34rem;
+				margin-left: -1.25rem;
+			}
+		}
+
+		h2 {
+			font-size: 16rem;
+			font-weight: 700;
+			line-height: 1.1;
+
+			@screen md {
+				font-size: 12rem;
+			}
+
+			@screen lg {
+				font-size: 16rem;
+			}
+		}
+
+		p {
+			font-size: 5.5rem;
+			font-family: "Nunito", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 300;
+			font-style: normal;
+			line-height: 1.7;
+			max-width: 100%;
+
+			@screen sm {
+				font-size: 4rem;
+			}
+
+			@screen md {
+				font-size: 3.25rem;
+			}
+
+			@screen lg {
+				max-width: 52rem;
+				font-size: 2.3rem;
+			}
+		}
+
+		.line {
+			width: 15rem;
+			height: 0.2rem;
+			background-color: #000;
+		}
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: "Nunito", sans-serif;
+		font-optical-sizing: auto;
+		font-style: normal;
+	}
+</style>
