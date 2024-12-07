@@ -5,21 +5,43 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Cardiff-based web developer with over a decade of experience. Head of Development at WebBox, specializing in innovative, user-focused digital solutions." />
 		<title>Craig Barlow | Web Developer based in Cardiff</title>
-
+		<script defer data-domain="craigbarlow.dev" src="https://plausible.io/js/script.js"></script>
 		<script>
             let vheight = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', vheight + 'px');
         </script>
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 	</head>
 	<body class="bg-bg-light text-white">
 		<slot />
 	</body>
 </html>
+
+<style lang="scss" is:global>
+	@font-face {
+		font-display: swap;
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 400;
+		src: url('/fonts/nunito-v26-latin-regular.woff2') format('woff2');
+	}
+	@font-face {
+		font-display: swap;
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 600;
+		src: url('/fonts/nunito-v26-latin-600.woff2') format('woff2');
+	}
+	/* nunito-900 - latin */
+	@font-face {
+		font-display: swap;
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 900;
+		src: url('/fonts/nunito-v26-latin-900.woff2') format('woff2');
+	}
+</style>
 
 <style lang="scss">
 	html,
